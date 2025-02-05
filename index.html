@@ -11,23 +11,27 @@
 </head>
 
 <body>
-
   <h1>Anh có điều muốn nói</h1>
-  <button id="playButton" onclick="generateRandomNotifications()">Nhấn đây nè</button>
+
+  <button id="playButton" onclick="generateRandomNotifications()">Nhấn vào đây nè</button>
+
   <div class="final-message" id="finalMessage" onclick="redirectToNewPage()">
     <p id="text1"></p>
     <p id="text2"></p>
   </div>
-  <audio id="audioPlayer" src="./TBN.mp3"></audio> 
+
+  <audio id="audioPlayer" src="./TBN.mp3"></audio>
+
   <script>
     const playButton = document.getElementById("playButton");
     const audioPlayer = document.getElementById("audioPlayer");
 
-    playButton.addEventListener("click", function() {
-        audioPlayer.play();
+    playButton.addEventListener("click", function () {
+      audioPlayer.play();
     });
-</script>
-<script src="./script.js"></script>
+  </script>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
